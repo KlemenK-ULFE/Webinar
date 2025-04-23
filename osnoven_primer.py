@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 net = pn.simple_mv_open_ring_net()
 
 # Dodaj obremenitev (load)
-pp.create_load(net, bus=5, p_mw=0.2, q_mvar=0.05)
+pp.create_load(net, bus=5, p_mw=10, q_mvar=0.05)
 
 # Izvedi power flow
 pp.runpp(net)
@@ -18,3 +18,5 @@ print(net.res_line)
 
 # Izriši rezultate
 plot.simple_plot(net, show_plot=True)
+
+pp.create_gen(net, bus =5, p_mw=2)
