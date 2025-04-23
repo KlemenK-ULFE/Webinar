@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "webinar-ngn"
+version = "0.1.0"
+description = ""
+authors = ["KlemenK-ULFE"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandapower = {extras = ["all"], version = "^3.0.0"}
+matplotlib = "^3.10.1"
+plotly = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
